@@ -3,7 +3,7 @@ from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 import requests
 import base64
-import logging
+#import logging
 
 app = FastAPI()
 
@@ -20,8 +20,8 @@ API_URL = "https://api-inference.huggingface.co/models/facebook/musicgen-small"
 HEADERS = {"Authorization": "Bearer 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"}
 
 # Configure logging
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
+#logging.basicConfig(level=logging.INFO)
+#logger = logging.getLogger(__name__)
 
 class QueryPayload(BaseModel):
     inputs: str
